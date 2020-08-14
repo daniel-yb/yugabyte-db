@@ -12,9 +12,9 @@ dependencies:
   - role: mount_ephemeral_drives
     when: cloud_type != "onprem"
 
-  - role: swamper
-    prometheus_components:
-      - node_exporter
+#  - role: swamper
+#    prometheus_components:
+#      - node_exporter
 
   - role: create_user
     create_user:
